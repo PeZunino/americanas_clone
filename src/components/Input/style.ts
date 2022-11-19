@@ -11,6 +11,7 @@ export const Container = styled.div`
 
   padding: 0px 15px 0px 15px;
 
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 15px;
   input {
     width: inherit;
   }

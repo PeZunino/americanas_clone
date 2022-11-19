@@ -8,7 +8,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     outline:0;
   }
-
+  body,input,button{
+    font-family: 'Sans serif', serif;
+    font-size: 16px;
+  }
   body{
     background-color: #f1f1f1;
   }

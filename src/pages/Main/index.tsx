@@ -1,11 +1,19 @@
 import React from 'react';
 import { CgProfile } from 'react-icons/cg';
-import { Container, MainMenu, MenuContainer, PromoBanner, Tag } from './styles';
+import {
+  Container,
+  MainMenu,
+  MenuContainer,
+  PromoBanner,
+  SingUpButton,
+  Tag,
+} from './styles';
 import appBanner from '../../assets/mainpage/app.webp';
 import blackFridayBanner from '../../assets/mainpage/black_friday.webp';
 import christmasBanner from '../../assets/mainpage/christmas.webp';
 import etiquetaBlack from '../../assets/mainpage/etiqueta_black.webp';
-
+import { FaStore, FaShoppingBasket } from 'react-icons/fa';
+import { AiFillHeart } from 'react-icons/ai';
 import logo from '../../assets/logo.png';
 import Input from '../../components/Input';
 export const MainPage: React.FC = () => {
@@ -22,8 +30,16 @@ export const MainPage: React.FC = () => {
 
             <Input></Input>
 
-            {/* <CgProfile size={30} values=" className: react-icons" /> */}
-            {/* <a href="#">olá, faça seu login ou cadastre-se</a> */}
+            <SingUpButton>
+              <CgProfile size={55} values=" className: react-icons" />
+              <strong>olá, faça seu login ou cadastre-se </strong>
+
+              {/* <a href="#">olá, faça seu login ou cadastre-se</a> */}
+            </SingUpButton>
+
+            <FaStore size={30} />
+            <AiFillHeart size={30} />
+            <FaShoppingBasket size={30} />
           </MainMenu>
         </MenuContainer>
 

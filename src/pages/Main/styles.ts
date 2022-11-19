@@ -32,9 +32,23 @@ export const MainMenu = styled.div`
   align-items: center;
   place-content: center;
   gap: 48px;
-
-  margin-top: 27px;
+  height: 120px;
   padding: 0px 15px 0px 15px; ;
+`;
+
+export const SingUpButton = styled.div`
+  height: 86px;
+  width: 184px;
+  display: flex;
+  align-items: center;
+  place-content: center;
+
+  strong {
+    margin-left: 5px;
+    height: 36px;
+    width: 230px;
+    font-size: 14px;
+  }
 `;
 
 export const PromoBanner = styled.div`
