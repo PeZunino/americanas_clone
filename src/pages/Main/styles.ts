@@ -20,14 +20,21 @@ export const MenuContainer = styled.div`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 
   img {
     width: 8%;
   }
 `;
 export const MainMenu = styled.div`
-  /* background-color: #ffffff; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  place-content: center;
+  gap: 48px;
+
+  margin-top: 27px;
+  padding: 0px 15px 0px 15px; ;
 `;
 
 export const PromoBanner = styled.div`
@@ -35,7 +42,6 @@ export const PromoBanner = styled.div`
   flex-direction: column;
 
   align-items: center;
-  place-content: center;
 
   img {
     margin-bottom: 20px;

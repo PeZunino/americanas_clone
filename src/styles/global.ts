@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: #f1f1f1;
   }
 
+  input{
+    outline: 0;
+    border:0
+  }
 
 `;
 export default GlobalStyles;

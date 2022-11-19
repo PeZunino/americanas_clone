@@ -7,6 +7,7 @@ import christmasBanner from '../../assets/mainpage/christmas.webp';
 import etiquetaBlack from '../../assets/mainpage/etiqueta_black.webp';
 
 import logo from '../../assets/logo.png';
+import Input from '../../components/Input';
 export const MainPage: React.FC = () => {
   return (
     <>
@@ -17,11 +18,9 @@ export const MainPage: React.FC = () => {
 
         <MenuContainer>
           <MainMenu>
-            {/* <img src={logo} alt="logo" /> */}
+            <img src={logo} alt="logo" />
 
-            <div>
-              <input type="text" />
-            </div>
+            <Input></Input>
 
             {/* <CgProfile size={30} values=" className: react-icons" /> */}
             {/* <a href="#">olá, faça seu login ou cadastre-se</a> */}
