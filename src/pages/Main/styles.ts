@@ -12,7 +12,7 @@ export const Tag = styled.div`
 
 export const MenuContainer = styled.div`
   width: auto;
-  height: 160px;
+  height: 120px;
   margin-bottom: 10px;
 
   background-color: #f80032;
@@ -32,10 +32,19 @@ export const MainMenu = styled.div`
   align-items: center;
   place-content: center;
   gap: 48px;
-  height: 120px;
+  height: 45px;
+  margin: 24px 0px 15px 0px;
   padding: 0px 15px 0px 15px; ;
 `;
-
+export const SecondMenu = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  place-content: center;
+  gap: 48px;
+  height: 45px;
+  padding: 0px 15px 0px 15px; ;
+`;
 export const SingUpButton = styled.div`
   height: 86px;
   width: 184px;

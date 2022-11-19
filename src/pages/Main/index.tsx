@@ -5,6 +5,7 @@ import {
   MainMenu,
   MenuContainer,
   PromoBanner,
+  SecondMenu,
   SingUpButton,
   Tag,
 } from './styles';
@@ -16,6 +17,7 @@ import { FaStore, FaShoppingBasket } from 'react-icons/fa';
 import { AiFillHeart } from 'react-icons/ai';
 import logo from '../../assets/logo.png';
 import Input from '../../components/Input';
+import { Button } from '../../components/Button';
 export const MainPage: React.FC = () => {
   return (
     <>
@@ -33,14 +35,15 @@ export const MainPage: React.FC = () => {
             <SingUpButton>
               <CgProfile size={55} values=" className: react-icons" />
               <strong>olá, faça seu login ou cadastre-se </strong>
-
-              {/* <a href="#">olá, faça seu login ou cadastre-se</a> */}
             </SingUpButton>
 
             <FaStore size={30} />
             <AiFillHeart size={30} />
             <FaShoppingBasket size={30} />
           </MainMenu>
+          <SecondMenu>
+            <Button />
+          </SecondMenu>
         </MenuContainer>
 
         <PromoBanner>
