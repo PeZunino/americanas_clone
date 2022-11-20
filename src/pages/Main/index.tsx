@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HiOutlineUserCircle } from 'react-icons/hi';
+import { FiMapPin } from 'react-icons/fi';
 import {
   Container,
   UpMenu,
@@ -9,6 +10,8 @@ import {
   SingUpButton,
   Tag,
   Icons,
+  CepContainer,
+  NichesContainer,
 } from './styles';
 import appBanner from '../../assets/mainpage/app.webp';
 import blackFridayBanner from '../../assets/mainpage/black_friday.webp';
@@ -18,7 +21,19 @@ import { BsBasket, BsHeart } from 'react-icons/bs';
 import { IoStorefrontOutline } from 'react-icons/io5';
 import logo from '../../assets/logo.png';
 import Input from '../../components/Input';
+import { Button } from '../../components/Button';
 export const MainPage: React.FC = () => {
+  const niches = [
+    'pra sua empresa',
+    'baixe o app',
+    'receba hoje',
+    'ame digital',
+    'marcas próprias',
+    'produtos internacionais',
+    'lojas oficiais',
+    'oferta do dia',
+  ];
+
   return (
     <>
       <Container>
@@ -53,7 +68,21 @@ export const MainPage: React.FC = () => {
             </Icons>
           </UpMenu>
 
-          <DownMenu>segundo menu</DownMenu>
+          <DownMenu>
+            <CepContainer>
+              <FiMapPin size={18} />
+              <strong>informe seu CEP</strong>
+            </CepContainer>
+            <NichesContainer>
+              <ul>
+                {niches.map((niche, index) => (
+                  <li key={index}>
+                    <Button labelText={niche} />
+                  </li>
+                ))}
+              </ul>
+            </NichesContainer>
+          </DownMenu>
         </MenuContainer>
 
         <PromoBanner>

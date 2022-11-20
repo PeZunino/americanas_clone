@@ -1,3 +1,4 @@
+import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -21,6 +22,10 @@ export const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  strong {
+    font-size: 14px;
+  }
 `;
 export const UpMenu = styled.div`
   display: flex;
@@ -54,7 +59,6 @@ export const SingUpButton = styled.div`
 
   strong {
     height: 36px;
-    font-size: 14px;
     margin-left: 8px;
   }
 `;
@@ -81,9 +85,35 @@ export const DownMenu = styled.div`
   flex-direction: row;
   align-items: center;
   place-content: center;
-  gap: 48px;
+
+  max-width: 1250px;
   height: 45px;
-  padding: 0px 15px 0px 15px; ;
+  gap: 35px;
+`;
+
+export const CepContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 155px;
+  height: 33px;
+  svg {
+    margin-right: 7px;
+  }
+`;
+
+export const NichesContainer = styled.div`
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+
+  ul {
+    display: flex;
+    li {
+      margin-right: 16px;
+    }
+  }
 `;
 
 export const PromoBanner = styled.div`

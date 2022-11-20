@@ -15,7 +15,14 @@ const GlobalStyles = createGlobalStyle`
   body{
     background-color: #f1f1f1;
   }
- 
+
+  ul,li{
+    list-style:none
+  }
+  a{
+    text-decoration: none;
+    
+  }
   input{
     outline: 0;
     border:0;
