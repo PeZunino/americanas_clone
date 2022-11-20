@@ -2,19 +2,20 @@ import React from 'react';
 import { HiOutlineUserCircle } from 'react-icons/hi';
 import {
   Container,
-  MainMenu,
+  UpMenu,
   MenuContainer,
   PromoBanner,
-  SecondMenu,
+  DownMenu,
   SingUpButton,
   Tag,
+  Icons,
 } from './styles';
 import appBanner from '../../assets/mainpage/app.webp';
 import blackFridayBanner from '../../assets/mainpage/black_friday.webp';
 import christmasBanner from '../../assets/mainpage/christmas.webp';
 import etiquetaBlack from '../../assets/mainpage/etiqueta_black.webp';
-import { FaStore, FaShoppingBasket } from 'react-icons/fa';
-import { AiFillHeart } from 'react-icons/ai';
+import { BsBasket, BsHeart } from 'react-icons/bs';
+import { IoStorefrontOutline } from 'react-icons/io5';
 import logo from '../../assets/logo.png';
 import Input from '../../components/Input';
 export const MainPage: React.FC = () => {
@@ -26,23 +27,27 @@ export const MainPage: React.FC = () => {
         </Tag>
 
         <MenuContainer>
-          <MainMenu>
-            <img src={logo} alt="logo" />
+          <UpMenu>
+            <a>
+              <img src={logo} alt="logo" />
+            </a>
 
             <Input></Input>
 
             <SingUpButton>
-              <HiOutlineUserCircle size={42} />
+              <HiOutlineUserCircle size={65} />
               {/* <CgProfile size={55} /> */}
               <strong>olá, faça seu login ou cadastre-se </strong>
             </SingUpButton>
 
-            <FaStore size={30} className="marginRight" />
-            <AiFillHeart size={30} className="marginRight" />
-            <FaShoppingBasket size={30} />
-          </MainMenu>
+            <Icons>
+              <IoStorefrontOutline size={25} className="icon MarginRight" />
+              <BsHeart size={25} className="icon MarginRight" />
+              <BsBasket size={25} />
+            </Icons>
+          </UpMenu>
 
-          <SecondMenu>segundo menu</SecondMenu>
+          <DownMenu>segundo menu</DownMenu>
         </MenuContainer>
 
         <PromoBanner>

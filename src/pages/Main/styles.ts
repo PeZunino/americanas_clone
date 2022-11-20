@@ -20,37 +20,29 @@ export const MenuContainer = styled.div`
 
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-
-  img {
-    width: 8%;
-  }
+  align-items: center;
 `;
-export const MainMenu = styled.div`
+export const UpMenu = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   place-content: center;
 
+  max-width: 1250px;
   height: 45px;
   margin: 24px 0px 15px 0px;
-  padding: 0px 15px 0px 15px;
 
-  .marginRight {
-    margin-right: 24px;
+  a {
+    width: 155px;
+    height: 33px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
-export const SecondMenu = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  place-content: center;
-  gap: 48px;
-  height: 45px;
-  padding: 0px 15px 0px 15px; ;
-`;
+
 export const SingUpButton = styled.div`
-  align-items: stretch;
   display: flex;
 
   align-items: center;
@@ -58,14 +50,38 @@ export const SingUpButton = styled.div`
   margin-right: 48px;
 
   height: 80px;
-  width: 184px;
+  width: 194px;
 
   strong {
-    width: 100%;
-    margin-left: 8px;
     height: 36px;
     font-size: 14px;
+    margin-left: 8px;
   }
+`;
+
+export const Icons = styled.div`
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  svg {
+    /* &:hover {
+      
+    } */
+    transition: all 0.4s;
+    transform-origin: 50% 50%;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+`;
+export const DownMenu = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  place-content: center;
+  gap: 48px;
+  height: 45px;
+  padding: 0px 15px 0px 15px; ;
 `;
 
 export const PromoBanner = styled.div`
