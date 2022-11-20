@@ -1,5 +1,5 @@
 import React from 'react';
-import { CgProfile } from 'react-icons/cg';
+import { HiOutlineUserCircle } from 'react-icons/hi';
 import {
   Container,
   MainMenu,
@@ -32,7 +32,8 @@ export const MainPage: React.FC = () => {
             <Input></Input>
 
             <SingUpButton>
-              <CgProfile size={55} />
+              <HiOutlineUserCircle size={42} />
+              {/* <CgProfile size={55} /> */}
               <strong>olá, faça seu login ou cadastre-se </strong>
             </SingUpButton>
 

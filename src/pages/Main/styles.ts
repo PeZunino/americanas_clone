@@ -50,16 +50,20 @@ export const SecondMenu = styled.div`
   padding: 0px 15px 0px 15px; ;
 `;
 export const SingUpButton = styled.div`
-  height: 86px;
-  width: 184px;
+  align-items: stretch;
   display: flex;
+
   align-items: center;
   place-content: center;
   margin-right: 48px;
+
+  height: 80px;
+  width: 184px;
+
   strong {
-    margin-left: 5px;
+    width: 100%;
+    margin-left: 8px;
     height: 36px;
-    width: 230px;
     font-size: 14px;
   }
 `;
