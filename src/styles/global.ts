@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
   body{
     background-color: #f1f1f1;
   }
-
+ 
   input{
     outline: 0;
     border:0;

@@ -41,9 +41,15 @@ export const MainPage: React.FC = () => {
             </SingUpButton>
 
             <Icons>
-              <IoStorefrontOutline size={25} className="icon MarginRight" />
-              <BsHeart size={25} className="icon MarginRight" />
-              <BsBasket size={25} />
+              <a href="#">
+                <IoStorefrontOutline size={25} className="icon MarginRight" />
+              </a>
+              <a href="#">
+                <BsHeart size={25} className="icon MarginRight" />
+              </a>
+              <a href="#">
+                <BsBasket size={25} />
+              </a>
             </Icons>
           </UpMenu>
 

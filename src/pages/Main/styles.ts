@@ -60,13 +60,15 @@ export const SingUpButton = styled.div`
 `;
 
 export const Icons = styled.div`
-  display: flex;
   gap: 24px;
-  align-items: center;
+  display: flex;
+  a {
+    display: flex;
+    color: #ffffff;
+    width: auto;
+    align-items: center;
+  }
   svg {
-    /* &:hover {
-      
-    } */
     transition: all 0.4s;
     transform-origin: 50% 50%;
     &:hover {
