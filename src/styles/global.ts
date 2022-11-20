@@ -18,7 +18,8 @@ const GlobalStyles = createGlobalStyle`
 
   input{
     outline: 0;
-    border:0
+    border:0;
+    font-family: 'Arial', serif;
   }
 
 `;

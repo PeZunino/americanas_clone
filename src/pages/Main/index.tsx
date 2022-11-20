@@ -17,7 +17,6 @@ import { FaStore, FaShoppingBasket } from 'react-icons/fa';
 import { AiFillHeart } from 'react-icons/ai';
 import logo from '../../assets/logo.png';
 import Input from '../../components/Input';
-import { Button } from '../../components/Button';
 export const MainPage: React.FC = () => {
   return (
     <>
@@ -33,17 +32,16 @@ export const MainPage: React.FC = () => {
             <Input></Input>
 
             <SingUpButton>
-              <CgProfile size={55} values=" className: react-icons" />
+              <CgProfile size={55} />
               <strong>olá, faça seu login ou cadastre-se </strong>
             </SingUpButton>
 
-            <FaStore size={30} />
-            <AiFillHeart size={30} />
+            <FaStore size={30} className="marginRight" />
+            <AiFillHeart size={30} className="marginRight" />
             <FaShoppingBasket size={30} />
           </MainMenu>
-          <SecondMenu>
-            <Button />
-          </SecondMenu>
+
+          <SecondMenu>segundo menu</SecondMenu>
         </MenuContainer>
 
         <PromoBanner>

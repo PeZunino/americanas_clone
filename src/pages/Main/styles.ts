@@ -31,10 +31,14 @@ export const MainMenu = styled.div`
   flex-direction: row;
   align-items: center;
   place-content: center;
-  gap: 48px;
+
   height: 45px;
   margin: 24px 0px 15px 0px;
-  padding: 0px 15px 0px 15px; ;
+  padding: 0px 15px 0px 15px;
+
+  .marginRight {
+    margin-right: 24px;
+  }
 `;
 export const SecondMenu = styled.div`
   display: flex;
@@ -51,7 +55,7 @@ export const SingUpButton = styled.div`
   display: flex;
   align-items: center;
   place-content: center;
-
+  margin-right: 48px;
   strong {
     margin-left: 5px;
     height: 36px;

@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: white;
-  width: 576px;
+  width: 614px;
   height: 40px;
   border-radius: 8px;
-
+  margin: 0px 48px 0px 48px;
   display: flex;
   align-items: center;
 
